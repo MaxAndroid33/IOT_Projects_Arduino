@@ -17,10 +17,10 @@
 #define WIFI_PASSWORD "1234567890"
 
 // Insert Firebase project API Key
-#define API_KEY "AIzaSyB-7682sEywT1kmdjGpq4cAA6oiOMib9qU"
+#define API_KEY ""
 
 // Insert RTDB URLefine the RTDB URL */
-#define DATABASE_URL "https://sun-water-heater-default-rtdb.asia-southeast1.firebasedatabase.app" 
+#define DATABASE_URL "" 
 
 //Define Firebase Data object
 FirebaseData fbdo;

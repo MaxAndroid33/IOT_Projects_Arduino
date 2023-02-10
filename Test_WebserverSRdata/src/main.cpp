@@ -4,7 +4,10 @@
 #include <ESPAsyncWebServer.h>
 #include <ESP8266_ISR_Servo.h>
 
+
+
 // Published values for SG90 servos; adjust if needed
+
 #define TIMER_INTERRUPT_DEBUG 1
 #define ISR_SERVO_DEBUG 1
 #define MIN_MICROS 800 // 544
@@ -104,12 +107,12 @@ void SetPOS(String Xp, String Yp)
   if (yy != 0)
   {
 
-    if (yy < ( thresholdY))
+    if (yy < thresholdY)
     {
       positiony = positiony + SpeedY;
       ISR_Servo.setPosition(servoindexUpDown, positiony + SpeedY);
     }
-    else if (yy > (thresholdY))
+    else if (yy > thresholdY)
     {
       positiony = positiony - SpeedY;
       ISR_Servo.setPosition(servoindexUpDown, positiony - SpeedY);
